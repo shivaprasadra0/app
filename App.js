@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, FlatList, Text, StyleSheet, ScrollView, Animated } from 'react-native';
 
-const YourScreen = () => {
+const App = () => {
   const [scrollY] = useState(new Animated.Value(0));
   const [blurIntensity, setBlurIntensity] = useState(0);
 
@@ -102,4 +102,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default YourScreen;
+export default App;
