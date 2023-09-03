@@ -16,7 +16,7 @@ const App = () => {
     };
   }, [scrollY]);
 
-  const yourData = Array.from({ length: 20 }, (_, index) => ({
+  const Data = Array.from({ length: 20 }, (_, index) => ({
     id: `${index + 1}`,
     text: `Item ${index + 1}`,
   }));
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       <FlatList
-        data={yourData}
+        data={Data}
         renderItem={({ item }) => (
           <Text style={styles.listItem}>{item.text}</Text>
         )}
